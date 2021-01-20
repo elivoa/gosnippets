@@ -13,6 +13,7 @@ require (
 	github.com/georgysavva/scany v0.2.7
 	github.com/gomodule/redigo v1.7.1-0.20190724094224-574c33c3df38 // indirect
 	github.com/gorilla/websocket v1.4.2
+	github.com/gotmc/libusb v1.0.22
 	github.com/iris-contrib/blackfriday v2.0.0+incompatible // indirect
 	github.com/iris-contrib/middleware/jwt v0.0.0-20201115103636-07e8bced147f
 	github.com/iris-contrib/pongo2 v0.0.1 // indirect

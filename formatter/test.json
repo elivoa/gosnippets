@@ -1,98 +1,13 @@
 {
   "type": "object",
-  "title": "empty object",
   "properties": {
     "data": {
-      "type": "object",
-      "properties": {
-        "staffs": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string",
-                "description": "员工名字"
-              },
-              "source_id": {
-                "type": "string",
-                "description": "dealtape员工ID"
-              },
-              "department_id": {
-                "type": "string",
-                "description": "部门ID"
-              },
-              "department_name": {
-                "type": "string",
-                "description": "部门名称（填充）"
-              },
-              "created_at": {
-                "type": "string",
-                "description": "创建时间"
-              },
-              "authed_at": {
-                "type": "string",
-                "description": "被授权时间"
-              },
-              "authed_by": {
-                "type": "string",
-                "description": "最后授权者用户ID"
-              }
-            },
-            "required": [
-              "source_id"
-            ]
-          }
-        }
-      },
-      "required": [
-        "staffs"
-      ]
-    },
-    "message": {
-      "type": "string"
-    },
-    "code": {
-      "type": "number",
-      "mock": {
-        "mock": "0"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$$ref": "#/definitions/cmmodels.MicArrayParameters",
+        "required": []
       }
-    }
-  },
-  "required": [
-    "data",
-    "code"
-  ]
-}
-
-{
-  "type": "object",
-  "properties": {
-    "data": {
-      "type": "object",
-      "properties": {
-        "branch_id": {
-          "description": "FKeys",
-          "type": "string"
-        },
-        "created_at": {
-          "type": "string"
-        },
-        "id": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "updated_at": {
-          "type": "string"
-        }
-      },
-      "$$ref": "#/definitions/cmmodels.Counter",
-      "required": []
     },
     "code": {
       "type": "number"
@@ -102,6 +17,119 @@
     }
   },
   "required": [
-    "code"
+    "code",
+    "data"
+  ]
+}
+
+
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "AECfreezeOnOff": {
+          "type": "integer"
+        },
+        "AECNorm": {
+          "type": "number"
+        },
+        "AECSilenceLevel": {
+          "type": "number"
+        },
+        "AGCDesiredLevel": {
+          "type": "number"
+        },
+        "AGCGain": {
+          "type": "number"
+        },
+        "AGCMaxGain": {
+          "type": "number"
+        },
+        "AGCOnOff": {
+          "type": "integer"
+        },
+        "AGCTime": {
+          "type": "number"
+        },
+        "CNIOnOff": {
+          "type": "integer"
+        },
+        "EchoOnOff": {
+          "type": "integer"
+        },
+        "FreezeOnOff": {
+          "type": "integer"
+        },
+        "GammaE": {
+          "type": "number"
+        },
+        "GammaENL": {
+          "type": "number"
+        },
+        "GammaETail": {
+          "type": "number"
+        },
+        "GammaNN": {
+          "type": "number"
+        },
+        "GammaNNSR": {
+          "type": "number"
+        },
+        "GammaNS": {
+          "type": "number"
+        },
+        "GammaNSSR": {
+          "type": "number"
+        },
+        "GammaVadSR": {
+          "type": "number"
+        },
+        "HPFOnOff": {
+          "type": "integer"
+        },
+        "MinNN": {
+          "type": "number"
+        },
+        "MinNNSR": {
+          "type": "number"
+        },
+        "MinNS": {
+          "type": "number"
+        },
+        "MinNSSR": {
+          "type": "number"
+        },
+        "NLAECMode": {
+          "type": "integer"
+        },
+        "NLAttenOnOff": {
+          "type": "integer"
+        },
+        "NonStatNoiseOnOff": {
+          "type": "integer"
+        },
+        "NonStatNoiseOnOffSr": {
+          "type": "integer"
+        },
+        "RT60OnOff": {
+          "type": "integer"
+        },
+        "StatNoiseOnOff": {
+          "type": "integer"
+        },
+        "StatNoiseOnOffSr": {
+          "type": "integer"
+        },
+        "TransientOnOff": {
+          "type": "integer"
+        }
+      },
+      "$$ref": "#/definitions/cmmodels.MicArrayParameters"
+    }
+  },
+  "required": [
+    "data"
   ]
 }
