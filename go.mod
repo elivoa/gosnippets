@@ -17,6 +17,7 @@ require (
 	github.com/iris-contrib/blackfriday v2.0.0+incompatible // indirect
 	github.com/iris-contrib/middleware/jwt v0.0.0-20201115103636-07e8bced147f
 	github.com/iris-contrib/pongo2 v0.0.1 // indirect
+	github.com/jacobsa/go-serial v0.0.0-20180131005756-15cf729a72d4
 	github.com/kataras/iris/v12 v12.2.0-alpha.0.20201113181155-4d09475c290d
 	github.com/ryanuber/columnize v2.1.0+incompatible // indirect
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
